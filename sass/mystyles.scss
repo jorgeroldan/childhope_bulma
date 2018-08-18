@@ -20,8 +20,13 @@ $fullhd-enabled: false;
 $body-background-color: $beige-lighter;
 $control-border-width: 2px;
 $input-border-color: transparent;
+<<<<<<< HEAD
 $input-shadow: black;
 
+=======
+$input-shadow: none;
+$m: 768px;
+>>>>>>> 67d2ef2c90fe1c905e03e41810609d355c2ed4ae
 
 
 // Import only what you need from Bulma
@@ -33,3 +38,10 @@ $input-shadow: black;
 @import "../node_modules/bulma/sass/elements/title.sass";
 @import "../node_modules/bulma/sass/layout/hero.sass";
 @import "../node_modules/bulma/sass/layout/section.sass";
+
+
+#hambutton{
+    @media (min-width: $m) {
+        display: none;
+    }
+}
