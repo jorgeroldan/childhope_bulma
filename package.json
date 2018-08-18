@@ -66,12 +66,13 @@
     "build-cleancss": "cleancss -o css/bulma.min.css css/bulma.css",
     "build-sass": "node-sass --output-style expanded --source-map true bulma.sass css/bulma.css",
     "deploy": "npm run build",
-    "start": "npm run build-sass -- --watch", 
-      "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css",
-      "css-watch": "npm run css-build -- --watch",
-      "start": "npm run css-watch"
+    "start": "npm run css-watch",
+    "css-build": "node-sass --omit-source-map-url sass/mystyles.scss css/mystyles.css",
+    "css-watch": "npm run css-build -- --watch"
   },
   "style": "bulma/css/bulma.min.css",
-  "version": "0.7.1"
+  "version": "0.7.1",
+  "dependencies": {
+    "buefy": "^0.6.6"
+  }
 }
-
