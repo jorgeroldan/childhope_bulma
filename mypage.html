@@ -44,6 +44,12 @@
       background: white url(images/hero-3.jpg) center / cover;
     }
   }
+
+ @media (max-width: 768px){
+   .hambutton {
+     display: none;
+   }
+ }
 </style>
 
 <body>
@@ -57,29 +63,29 @@
         <div class="column left">
           <div class="navbar-brand">
             <a class="navbar-item">
-              <img src="https://lh3.googleusercontent.com/Bv5_Fa2WiFsx8c1ECqq2VFu3ooWAVJGB4FjRRTdFKHKh90gTPJIzA_Cy_0GuDWtsSMOEiwpt4VHRIHDkqM6_=w1024"
-                alt="Logo">
+              <!-- <img src="https://lh3.googleusercontent.com/Bv5_Fa2WiFsx8c1ECqq2VFu3ooWAVJGB4FjRRTdFKHKh90gTPJIzA_Cy_0GuDWtsSMOEiwpt4VHRIHDkqM6_=w1024"
+                alt="Logo"> -->
             </a>
           </div>
         </div>
         <div class="column center desktop has-text-white">
           <div id="navbarMenuHeroA" class="navbar-menu">
             <div class="navbar-end">
-              <a class="navbar-item">
-                El Proyecto
+              <a class="navbar-item" href="#about">
+                About
               </a>
-              <a class="navbar-item">
-                Colaboradores
+              <a class="navbar-item" href="#ourwork">
+                Team
               </a>
-              <a class="navbar-item">
-                Sponsors
+              <a class="navbar-item" href="#resources">
+                Resources
               </a>
               <span class="navbar-item">
-                <a class="button is-primary is-inverted">
+                <a href="https://www.gofundme.com/child-hope-ministries-uganda" class="button is-primary is-inverted">
                   <span class="icon">
                     <i class="fas fa-dollar-sign"></i>
                   </span>
-                  <span>Donar</span>
+                  <span>Donate</span>
                 </a>
               </span>
             </div>
@@ -87,7 +93,7 @@
         </div>
         <div class="column right has-text-white">
 
-          <figure class="navbar-item">
+            <figure id="hambutton" class="navbar-item">
             <a>
               <i class="fas fa-bars" style="color:white ;width: 1rem ; height: 1rem;"></i>
             </a>
@@ -119,22 +125,22 @@
         <div class="container">
           <ul>
             <li class="is-active">
-              <a class="desktop">El Proyecto</a>
+              <a class="desktop" href="#ourwork">Our Work</a>
             </li>
             <li>
-              <a class="desktop">Donar</a>
+              <a class="desktop" href="#getinvolved">Get Involved</a>
             </li>
             <li>
-              <a>Colaboradores</a>
+              <a href="#purpouse">Purpouse</a>
             </li>
             <li>
-              <a>Fotos</a>
+              <a href="#fotos">Fotos</a>
             </li>
             <li>
-              <a class="desktop">Contactános</a>
+              <a class="desktop" href="#contact">Contact</a>
             </li>
             <li>
-              <a class="desktop">Sponsors</a>
+              <a class="desktop" href="#sponsors">Sponsors</a>
             </li>
           </ul>
         </div>
@@ -142,11 +148,12 @@
     </div>
   </section>
 
+
   <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++ EL PROYECTO ++++++++++++++++++++++++++++++++++++++++++++++++  -->
   <div>
-    <div class="container is-fluid is-small has-background-gray-light">
+    <div id="about" class="container is-fluid is-small has-background-gray-light">
       <div class="notification">
-        <p class="title">El Proyecto: La Gran Familia</p>
+        <p class="title">About the project: La Gran Familia</p>
         <p class="subtitle"> Child Hope Ministries es una organización comunitaria, voluntaria, autofinanciada por sus fundadores, sin fines de
           lucro, formada por personas con
           <strong> una visión de apoyar,unir y promover el crecimiento de todos los ugandeses </strong>que están en situación de calle,
@@ -214,17 +221,49 @@
 
   <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++ EL FUNDADOR ++++++++++++++++++++++++++++++++++++++++++++++++  -->
   <section class="section is-small has-background-white">
-    <div class="container">
-      <h1 class="title">El Fundador</h1>
-      <h2 class="subtitle">
+    <div id="ourwork"class="container">
+      <h1 class="title">Team</h1>
+
+
+      <!-- <h2 class="subtitle">
         “ En el camino tuvimos que manejar muchos golpes, la falta de dinero, de espacio y apoyo, pero la disciplina y la sensibilidad
         fueron nuestros motores y aliados para seguir adelante e ir por más día a día. Llevamos mucho tiempo trabajando en
         esto, confiamos que es nuestro comenzar de algo más maravilloso, el futuro de nuestros chicos ”
-      </h2>
+      </h2> -->
     </div>
     <br>
     <div class="container">
       <div class="columns">
+        <div class="column">
+                <div>
+                  <figure class="image is-1by1">
+                    <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                  </figure>
+                </div>
+        </div>
+                <div class="column">
+                <div>
+                  <figure class="image is-1by1">
+                    <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                  </figure>
+                </div>
+        </div>
+                <div class="column">
+                  <div>
+                    <figure class="image is-1by1">
+                      <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                    </figure>
+                  </div>
+                </div>
+                        <div class="column">
+                          <div>
+                            <figure class="image is-1by1">
+                              <img class="is-rounded" src="https://bulma.io/images/placeholders/128x128.png">
+                            </figure>
+                          </div>
+                        </div>
+        </div>
+        <div class="columns">
         <div class="column">
           <article class="media notification is-warning has-background-grey-lighter">
             <figure class="media-left">
@@ -401,8 +440,8 @@
   <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++ DONAR ++++++++++++++++++++++++++++++++++++++++++++++++  -->
 
   <section class="section">
-    <div class="container">
-      <h1 class="title">Donar</h1>
+    <div id="getinvolved" class="container">
+      <h1 class="title">Get Involved</h1>
       <h2 class="subtitle">
         Ayúdanos por favor, 1 u$s hace la diferencia para cumplir nuestro sueño de darles una vida digna a nuestros chicos
       </h2>
@@ -473,7 +512,7 @@
   </div>
 
   <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++ COLABORADORES ++++++++++++++++++++++++++++++++++++++++++++++    -->
-  <section class="section is-medium has-background-white-bis">
+  <section id="volunteers" class="section is-medium has-background-white-bis">
     <div class="container">
       <h1 class="title is-size-1 center-column has-margin-bottom">Colaboradores</h1>
 <br><br>
@@ -574,7 +613,7 @@
   </section>
 
   <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++ INFORMES ++++++++++++++++++++++++++++++++++++++++++++++++  -->
-  <section class="hero is-primary is-medium">
+  <section id="resources" class="hero is-primary is-medium">
     <div class="hero-body">
       <div class="container">
         <section class="section">
@@ -591,7 +630,7 @@
 
 
   <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++ FOTOS ++++++++++++++++++++++++++++++++++++++++++++++++  -->
-  <section class="section">
+  <section id="fotos" class="section">
     <div class="container">
       <h1 class="title">Galeria de Fotos</h1>
       <h2 class="subtitle">
@@ -641,7 +680,7 @@
 
 
   <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++ EN RED ++++++++++++++++++++++++++++++++++++++++++++++++  -->
-  <section class="section">
+  <section id class="section">
     <div class="container">
       <h1 class="title">En Red</h1>
       <h2 class="subtitle">
@@ -653,7 +692,7 @@
 
   <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++ CONTACTANOS ++++++++++++++++++++++++++++++++++++++++++++++++  -->
 
-  <section class="section is-small has-background-white">
+  <section id="contact" class="section is-small has-background-white">
     <div class="container">
       <h1 class="title">Contactános</h1>
     </div>
@@ -719,7 +758,7 @@
 
   <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++ SPONSORS ++++++++++++++++++++++++++++++++++++++++++++++++  -->
 
-  <section class="section">
+  <section id="sponsors" class="section">
     <div class="container">
       <h1 class="title">Sponors</h1>
       <h2 class="subtitle">
@@ -729,7 +768,7 @@
   </section>
 
   <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++ TESTIMONIOS ++++++++++++++++++++++++++++++++++++++++++++++++  -->
-  <section class="section has-background-grey-lighter">
+  <section id="purpouse" class="section has-background-grey-lighter">
     <div class="container">
       <h1 class="title">Testimonios</h1>
       <h2 class="subtitle">
